@@ -8,7 +8,7 @@ token="1693375773:AAFsKYkReYRaegSIpSAO3TavSkmHqf7DwSc"
 def start(bot, update):
     try:
         username=update.message.from_user.username
-        message="Bienvenido " + username
+        message="Bienvenido soy un bot identificador de Picaduras" + username
         update.message.reply_text(message)
             
     except Exception as error:
