@@ -50,7 +50,7 @@ def getImagen(bot, update):
         message="Reconociendo picadura..."
         update.message.reply_text(message)                   
         myobj={"myfile":open(filename,'rb')}
-        r = requests.post("https://8080-copper-damselfly-36qh7h0w.ws-us03.gitpod.io/upload", files=myobj)
+        r = requests.post("https://8080-harlequin-eagle-sesc24cx.ws-us03.gitpod.io/upload", files=myobj)
         update.message.reply_text(r.text)
         
     except Exception as error:
@@ -63,7 +63,7 @@ def evaluar(bot,filename):
         update.message.reply_text(message)       
         params = {'myfile':filename}
         
-        r = requests.post("https://8080-copper-damselfly-36qh7h0w.ws-us03.gitpod.io/upload", myfile=params)
+        r = requests.post("https://8080-harlequin-eagle-sesc24cx.ws-us03.gitpod.io/upload", myfile=params)
         print(r.text)
         update.message.reply_text(r.text)
     except Exception as error:
