@@ -25,7 +25,7 @@ def echo(bot, update):
 
 def help(bot, update):
     try:
-        message="Puedes enviar imagenes para reconocer tu Picadura"
+        message="Puedes enviar imagenes para reconocer tu Picadura o escribir el tipo de sintoma que tienes"
         update.message.reply_text(message)
     except Exception as error:
         print("Error 003 {}".format(error.args[0]))
