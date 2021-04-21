@@ -18,6 +18,8 @@ def echo(bot, update):
     try:
         text=update.message.text
         update.message.reply_text(text)
+        result= requests.get("https://8080-black-chameleon-vn4htxcr.ws-us03.gitpod.io/picaduras?texto="+text)
+        update.message.reply_text(result.text)
     except Exception as error:
         print("Error 002 {}".format(error.args[0]))
 
